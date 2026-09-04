@@ -25,13 +25,24 @@
   </style>
 </head>
 <body>
-<button onclick="clickyBoi()">Show Text</button>
+<button onclick="toggleMode()">Show Text</button>
 <h1>Nuttings</h1>  
     
     <script>
-     function clickyBoi() {
-         alert('Silly bum bum')
+        let darkMode = 1
+        
+     function toggleMode() {
+         if (darkMode = 1) {
+            document.querySelector('body').style.background = "#000"
+             darkMode = 0
+         } else {
+           document.querySelector('body').style.background = "#fff"  
+             darkMode = 1
+         }
+             
      }
+
+   
    </script> 
 </body>
 </html>
