@@ -25,13 +25,14 @@
     
     <script>
         let darkMode = 1
+        const bodyElement = 'document.querySelector('body')'
         
      function toggleMode() {
          if (darkMode === 1) {
-            document.querySelector('body').style.background = "#000"
+            bodyElement.style.background = "#000"
              darkMode = 0
          } else {
-           document.querySelector('body').style.background = "#fff"  
+           bodyElement.style.background = "#fff"  
              darkMode = 1
          }
              
